@@ -30,8 +30,30 @@ let negValue = -value;
 // let str3 = str1 + ' '+str2; 
 // console.log(str3);
 
-console.log("1"+2);
-console.log(1+2+"3");
-console.log(typeof 1 + typeof 2 + typeof '1');
-console.log("3"+1+2);
-console.log(2-"1"+"2");
+// console.log("1"+2);
+// console.log(1+2+"3");
+// console.log(typeof 1 + typeof 2 + typeof '1');
+// console.log("3"+1+2);
+// console.log(2-"1"+"2");
+
+// console.log(null >0);
+// console.log(null == 0);
+// console.log(null>=0);
+
+// console.log(undefined == 0);
+// console.log(undefined > 0);
+// console.log( undefined < 0 );
+// console.log( "2" === 2); 
+
+const person = {
+    name: 'riya',
+    age:21,
+    isDeveloper:true,
+    greet :function(){
+        console.log('hey riya');
+    }
+};
+
+console.log(person.name);
+person.greet();
+
