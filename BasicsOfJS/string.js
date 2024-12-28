@@ -46,7 +46,7 @@ const  myFunction = function(){
     console.log('hey riya');
 }
 
-console.log(typeof outsideTemp);
+// console.log(typeof outsideTemp);
 
 
 // Stack , Heap Memory
@@ -57,8 +57,8 @@ let myYoutubename = 'riyavermadotcom';
 
 let anotheName = myYoutubename;
 anotheName = 'riya';
-console.log(myYoutubename);
-console.log(anotheName);
+// console.log(myYoutubename);
+// console.log(anotheName);
 
 
 let userOne = {
@@ -69,5 +69,40 @@ let userOne = {
 let userTwo = userOne;
 
 userTwo.email = 'riya@google.com';
-console.log(userOne.email);
-console.log(userTwo.email);
+// console.log(userOne.email); 
+// console.log(userTwo.email);
+
+
+const name = 'riya';
+const project = 'javascript';
+
+console.log(`hey my name is ${name} and my project is ${project}`);
+
+const gameName = new  String('riya-verma');
+// console.log(gameName.__proto__);
+
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+// console.log(gameName.charAt(5));
+
+// console.log(gameName.indexOf('e'));
+
+// const NewString = gameName.slice(-8,3);  
+// console.log(NewString);
+
+// console.log(gameName.substring(0,3));  //-ve value is not allowed
+
+
+const newStringOne = "   riya   ";
+// console.log(newStringOne.trim());
+// console.log(newStringOne.trim().length);
+// console.log(newStringOne);
+
+// const url = 'https://riya.com/riya%20verma';
+// console.log(url.replace('%20','_'));
+
+// console.log(url.includes('xyz'))
+
+//string conversion in array
+
+console.log(gameName.split('-'))
