@@ -88,12 +88,34 @@ const user = [
         age:20
     }
 ]
-console.log(user[0]);
+// console.log(user[0]);
 
-console.log(Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser));
 
-console.log(Object.values(tinderUser));
+// console.log(Object.values(tinderUser));
 
-console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('username'));
+// console.log(tinderUser.hasOwnProperty('username'));
+
+
+const course  = {
+    coursename : 'Basics of JS',
+    price : 1000,
+    author : 'Riya',
+} 
+
+const {author : coder} = course 
+// console.log(coder);
+
+// const navBar = ({company}) => {
+
+// }
+// console.log(navbar(company = 'Riya'));
+//prototype of api
+
+
+// [
+//     {},
+//     {},
+// ]
