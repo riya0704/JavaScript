@@ -19,3 +19,7 @@ if(num%2===0)
 else{
     console.log(`${num} is odd`);
 }
+
+//implicit code
+const balance = 20000;
+if (balance > 300) console.log("You are eligible for loan")
