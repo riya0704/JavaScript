@@ -23,3 +23,11 @@ else{
 //implicit code
 const balance = 20000;
 if (balance > 300) console.log("You are eligible for loan")
+
+
+const userLoggedIn = true;
+const debitCard = true;
+if (userLoggedIn && debitCard) {
+    console.log('Allow to buy course ');
+    
+}
