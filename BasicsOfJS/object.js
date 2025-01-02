@@ -50,10 +50,21 @@ const person = {
     age:21,
     isDeveloper:true,
     greet :function(){
-        console.log('hey riya');
+        // console.log('hey riya');
     }
 };
 
-console.log(person.name);
+// console.log(person.name);
 person.greet();
 
+const myObject = {
+    js: 'javascript',
+    cpp:'c++',
+    rb:'ruby',
+    swift:'swift by apple'
+}
+
+for (const key in myObject) {
+    console.log(`${key} shortcut is ${myObject[key]}`);
+    
+}

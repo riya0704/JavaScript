@@ -64,3 +64,5 @@ let score3 = 300
 
 console.log(Array.of(score1,score2,score3)); //returns array of values
 //output - [ 100, 200, 300 ]
+
+
