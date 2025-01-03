@@ -4,10 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color: rgb(9, 65, 82);">
-    
+<body style="background-color: #212121 ;color:aquamarine">
+    Dom Manipulation
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
 </body>
-<script>
+
+<!-- <script>
    const div =  document.createElement('div')
    console.log(div);
    div.className = 'main'
@@ -20,5 +24,22 @@
    div.appendChild(textNode);
     // console.log(textNode);
     document.body.appendChild(div)
+</script> -->
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('Python')
+    addLanguage('Java')
+    addLanguage('Cpp')
+
+    function addoptLang(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptLang('golang')
 </script>
 </html>
