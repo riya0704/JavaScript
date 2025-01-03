@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM</title>
 </head>
 <body style="background-color: #212121 ;color:aquamarine">
     Dom Manipulation
@@ -41,5 +41,25 @@
         document.querySelector('.language').appendChild(li)
     }
     addoptLang('golang')
+
+    //edit values 
+    const secondlang = document.querySelector('li:nth-child(5)')
+    // secondlang.innerHTML = 'Mojo'
+    const newLi = document.createElement('li')
+    newLi.textContent='Mojo'
+    secondlang.replaceWith(newLi)
+ //edit
+ const thirdVal = document.querySelector('li:nth-child(3)')
+ const newVal = document.createElement('li');
+ newVal.textContent = 'Ruby'
+ thirdVal.replaceWith(newVal)
+ //edit another value
+ const firstVal = document.querySelector('li:first-child')
+ firstVal.outerHTML="<li>TypeScript</li>"
+
+
+ //remove Value
+ const LastVal = document.querySelector('li:last-child')
+ LastVal.remove()
 </script>
 </html>
