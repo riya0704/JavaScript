@@ -20,6 +20,23 @@ This repository contains a collection of JavaScript projects created for learnin
 5. **Form Validator**
    - A form validation project that checks user inputs (e.g., email, password strength) and gives feedback. This project is great for understanding JavaScript's regular expressions and event handling.
 
+6. **BMI Calculator**
+   - A project that calculates the Body Mass Index (BMI) based on user input for height and weight.
+   - Check out the [BMI Calculator](BMICalculator/index.html) project for more details.
+
+7. **Digital Clock**
+   - A digital clock that displays the current local time and updates every second.
+   - Check out the [Digital Clock](DigitalClock/index.html) project for more details.
+
+8. **Color Changer**
+   - A project that changes the background color of the page based on user selection.
+   - Check out the [Color Changer](colorChanger/index.html) project for more details.
+
+9. **Reviews**
+   - A project that displays user reviews with navigation to view different reviews.
+   - Check out the [Reviews](reviews/index.html) project for more details.
+
+
 ## How to Use
 
 1. **Clone the Repository:**
