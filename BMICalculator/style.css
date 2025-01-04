@@ -1,0 +1,23 @@
+body{
+    background-color: rgba(255, 155, 24, 0.671);
+}
+.container{
+    background-color: rgba(7, 158, 108, 0.774);
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    margin-left: 22%;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 3px solid rgb(141, 79, 79);
+    border-radius: 20px;
+    text-decoration: wavy;
+}
+button{
+ background-color: rgb(203, 98, 235);
+ height: 30px;
+ width: 100px;
+ border-radius: 10px;
+ text-shadow: cadetblue;
+ font-family: 'Times New Roman', Times, serif;
+}
