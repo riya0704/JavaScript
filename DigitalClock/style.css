@@ -1,0 +1,20 @@
+body{
+    background-color: #e3ccb2;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.center{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#clock{
+    font-size: 40px;
+    background-color: #552619 ;
+    padding: 20px 50px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
