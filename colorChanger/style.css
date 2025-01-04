@@ -1,0 +1,44 @@
+body{
+    background-color: rgba(103, 52, 151, 0.288);
+    color: rgb(97, 1, 92);
+    font-style: italic;
+    font-display:inherit;
+}
+.canvas{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.button {
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;   
+}
+#grey{
+    background-color: grey;
+    border: 5px solid black;
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+}
+#blue{
+    background-color:rgb(36, 36, 182);
+    border: 5px solid black;
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+}
+#yellow{
+    background-color:rgb(240, 240, 84);
+    border: 5px solid black;
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+}
+#red{
+    background-color:rgb(172, 32, 32);
+    border: 5px solid black;
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+}
