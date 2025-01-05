@@ -1,0 +1,6 @@
+<----notes-
+topics for event - type, timestamp , defaultPrevented
+target, toElement , srcElement, currentTarget
+clientX,clientY,screenX,screenY
+altkey, ctrlkey, shiftkey, keycode
+------>

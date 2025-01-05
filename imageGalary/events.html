@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <img width="400px" height="400px" id="photoshop" src="pexels-isaak-cole-2147859173-29798552.jpg"
+                    alt="photoshop" />
+            </li>
+            <li>
+                <img width="400px" height="400px" id="japan" src="pexels-bilakis-17638051.jpg" alt="" />
+            </li>
+            <li>
+                <img width="400px" height="400px" id="river" src="pexels-einbeck-tourismus-455872439-15555520.jpg"
+                    alt="" />
+            </li>
+            <li>
+                <img width="400px" height="400px" id="owl" src="pexels-einbeck-tourismus-455872439-15918108.jpg"
+                    alt="" />
+            </li>
+            <li>
+                <img width="400px" height="400px" id="bird" src="pexels-hobiphotography-29983242.jpg" alt="" />
+            </li>
+            <li>
+                <img width="400px" height="400px" id="nature" src="pexels-andre-124356440-15921997.jpg" alt="" />
+            </li>
+            <li><a href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // document.getElementById('bird').onclick = function(){
+        //     alert('bird clicked')
+        // }
+
+        // document.getElementById('bird').addEventListener('click', function () {
+        //     alert('bird clicked')
+        // },false)
+        document.getElementById('images').addEventListener('click', function (e) {
+            console.log('clicked inside the ul'); 
+        },false)
+        document.getElementById('bird').addEventListener('click', function (e) {
+            console.log('bird clicked '); 
+            e.stopPropagation();
+        },false);
+        document.getElementById('google').addEventListener('click',function(e){
+           
+            e.preventDefault(); 
+            e.stopPropagation();
+            console.log('google clicked');
+    },false)
+    </script>
+</body>
+
+</html>
