@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <h1>events Handling</h1>
+    <button id="stop"> stop </button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log('Riya');    
+    // },2000)
+  const sayRiya = function(){
+    console.log('Riya');
+  }
+
+   const event = function(){
+    document.querySelector('h1').innerHTML = `best event methods`;
+   }
+    const changeMe = setTimeout(event,2000)
+    //setTimeout(sayRiya,2000)
+
+    // clearTimeout(event);
+
+
+    document.querySelector('#stop').addEventListener('click',function(){
+      clearTimeout(changeMe)
+      console.log('stoped');
+      
+    })
+</script>
+</html>
