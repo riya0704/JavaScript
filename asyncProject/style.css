@@ -1,0 +1,19 @@
+body{
+    background-color: #fec868;
+    color: #473c33;
+  
+}
+
+#start{
+    height: 50px;
+    width: 200px;
+    cursor: -moz-zoom-in;
+    border-radius: 10px;
+}
+#stop{
+    height: 50px;
+    width: 200px;
+    cursor: -moz-zoom-in;
+    border-radius: 10px;
+   
+}
