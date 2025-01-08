@@ -50,9 +50,10 @@
     <div class="card">
         <img src="" id="profilePhoto" alt="Avatar" style="width:100%">
         <div class="container">
-          <h4 id="username"></h4>
+          <h4 id="username">Username :</h4>
           <footer>
           <p>Followers : <span id="followers"></span></p>
+          
           <p>Public Repo : <span id="public_repos"></span></p>
           </footer>
         </div>
@@ -90,9 +91,9 @@
             if(xhr.readyState === 4){
                 const data = JSON.parse(this.response);
                 document.getElementById('profilePhoto').src = data.avatar_url;
-                document.getElementById('username').src = data.login;
-                document.getElementById('public_repos').src = data.public_repos;
-                document.getElementById('followers').src = data.followers;
+                document.getElementById('username').innerText = data.login;
+                document.getElementById('public_repos').innerText = data.public_repos;
+                document.getElementById('followers').innerText = data.followers;
             }
         }
         xhr.send()
