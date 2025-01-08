@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+    body{
+       background-color:#99cdd8 ; 
+        color:#657166 ;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 350px;
+  width: 450px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+</style>
+
+
+
+
+
 </head>
-<body style="background-color:#99cdd8 ; color:#657166 ;">
+<body>
     <h2>
         0 UNSENT client has been created. open() not called yet.<br>
         1 OPENED open() has been called.<br>
@@ -14,26 +45,59 @@
         4 DONE The Operation is complete.
     </h2>
 
-
+    <h2>GitHub Profile Card</h2>
+    <button id="getDataBtn">Get Data</button>
+    <div class="card">
+        <img src="" id="profilePhoto" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 id="username"></h4>
+          <footer>
+          <p>Followers : <span id="followers"></span></p>
+          <p>Public Repo : <span id="public_repos"></span></p>
+          </footer>
+        </div>
+      </div>
 
     <script>
-        const reqUrl = 'https://api.github.com/users/hiteshchaudhary';
-     const xhr = new XMLHttpRequest()
-     xhr.open('GET',reqUrl)
-     xhr.onreadystatechange = function(){
+    //     const reqUrl = 'https://api.github.com/users/riya0704';
+    //  const xhr = new XMLHttpRequest()
+    //  xhr.open('GET',reqUrl)
+    //  xhr.onreadystatechange = function(){
       
-          console.log(xhr.readyState);
-          if (xhr.readyState === 4) {
-            const data =  JSON.parse(this.responseText)
-            console.log(typeof data);
-            console.log(data.followers);
+    //       console.log(xhr.readyState);
+    //       if (xhr.readyState === 4) {
+    //         const data =  JSON.parse(this.responseText)
+    //         console.log(typeof data);
+    //         console.log(data.followers);
+    //         console.log(data.location);
+    //         console.log(data.public_repos);
             
-          }
-     }
-     console.log('hey');
+    //       }
+    //  }
+    //  console.log('hey');
    
      
-     xhr.send()
+    //  xhr.send()
+
+     const requestUrl = "https://api.github.com/users/riya0704";
+     const xhr = new XMLHttpRequest();
+     const getDataBtn = document.getElementById('getDataBtn');
+    const profileCard = document.getElementById('profilePhoto')
+
+     getDataBtn.addEventListener('click',function(){
+        xhr.open('GET', requestUrl);
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState === 4){
+                const data = JSON.parse(this.response);
+                document.getElementById('profilePhoto').src = data.avatar_url;
+                document.getElementById('username').src = data.login;
+                document.getElementById('public_repos').src = data.public_repos;
+                document.getElementById('followers').src = data.followers;
+            }
+        }
+        xhr.send()
+     })
+
     </script>
 </body>
 </html>
